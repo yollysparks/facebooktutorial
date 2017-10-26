@@ -3,6 +3,11 @@ import { Text, View, Platform, TouchableOpacity, StyleSheet, Button, WebView } f
 import { Constants, WebBrowser } from "expo";
 import { StackNavigator } from 'react-navigation';
 
+const Touchable = (props) => (
+    <TouchableOpacity style={styles.button} onPress={props.onPress}>
+      <Text style={styles.buttonText}>{props.title}</Text>
+    </TouchableOpacity>)
+    
 class ScrollView extends React.Component {
     static navigationOptions = { title: "Learn about Props" }
     render() {

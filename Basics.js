@@ -7,6 +7,10 @@ import { StackNavigator } from 'react-navigation';
 class Basics extends React.Component {
     static navigationOptions = { title: "Learn the Basics" }
     render() {
-      return (<View><Text>Learn The Bacics</Text></View>)
+      return (
+          <View>
+          <Text>Learn The Bacics</Text>
+          </View>
+        )
     }
   }
