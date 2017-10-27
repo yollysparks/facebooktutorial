@@ -5,13 +5,12 @@ import { StackNavigator } from 'react-navigation';
 
 //Todo: Refactor into a seperate file (Props.js), import and complete the exercise
 class Props extends React.Component {
-    static navigationOptions = { title: "Learn about Props" }
+    static navigationOptions = { title: "Props" }
     render() {
       return (
         <View>
-          <Text>Props</Text>
+        <Text>Hello {this.props.name}!</Text>
         </View>
       )
     }
   }
-export default Props;

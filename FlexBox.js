@@ -9,13 +9,15 @@ const Touchable = (props) => (
     </TouchableOpacity>)
     
 class FlexBox extends React.Component {
-    static navigationOptions = { title: "Learn about Props" }
+    static navigationOptions = { title: "Learn about FlexBox" }
     render() {
       return (
-        <View>
-          <Text>FlexBox</Text>
-        </View>
-      )
+        <View style={{flex: 1, flexDirection: 'row'}}>
+        <View style={{width: 50, height: 50, backgroundColor: 'powderblue'}} />
+        <View style={{width: 50, height: 50, backgroundColor: 'skyblue'}} />
+        <View style={{width: 50, height: 50, backgroundColor: 'steelblue'}} />
+      </View>
+      );
     }
   }
-  export default FlexBox
+  

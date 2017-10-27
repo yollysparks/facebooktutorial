@@ -3,9 +3,8 @@ import { Text, View, Platform, TouchableOpacity, StyleSheet, Button, WebView } f
 import { Constants, WebBrowser } from "expo";
 import { StackNavigator } from 'react-navigation';
 
-
 class Basics extends React.Component {
-    static navigationOptions = { title: "Learn the Basics" }
+    static navigationOptions = { title: "Basics" }
     render() {
       return (
           <View>

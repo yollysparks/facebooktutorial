@@ -3,10 +3,6 @@ import { Text, View, Platform, TouchableOpacity, StyleSheet, Button, WebView } f
 import { Constants, WebBrowser } from "expo";
 import { StackNavigator } from 'react-navigation';
 
-//Todo: Create a new file (State.js), import it, add a "Touchable", and complete the exercise
-//Todo: Create a new file (Style.js), import it, add a "Touchable", and complete the exercise
-
-
 const Touchable = (props) => (
   <TouchableOpacity style={styles.button} onPress={props.onPress}>
     <Text style={styles.buttonText}>{props.title}</Text>
@@ -18,10 +14,19 @@ class HomeScreen extends React.Component {
     const { navigate } = this.props.navigation;
     return (
       <View >
-        <Text style={{ textAlign: "center", fontSize: 20 }}>See all Demos implemented by Felesiah</Text>
+        <Text style={{ textAlign: "center", fontSize: 20 }}>See all Demos implemented by cph-fk58</Text>
         <Touchable onPress={() => navigate('web')} title="What I have to do" />
         <Touchable onPress={() => navigate('basics')} title="Basics" />
         <Touchable onPress={() => navigate('props')} title="Props" />
+        <Touchable onPress={() => navigate('state')} title="State" />
+        <Touchable onPress={() => navigate('style')} title="Style" />
+        <Touchable onPress={() => navigate('heightwidth')} title="HeightWidth" />
+        <Touchable onPress={() => navigate('flexbox')} title="FlexBox" />
+        <Touchable onPress={() => navigate('textinput')} title="TextInput" />
+        <Touchable onPress={() => navigate('touches')} title="Touches" />
+        <Touchable onPress={() => navigate('scrollview')} title="ScrollView" />
+        <Touchable onPress={() => navigate('listviews')} title="ListViews" />
+        <Touchable onPress={() => navigate('networking')} title="Networking" />
       </View>
     )
   }
@@ -42,6 +47,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     backgroundColor: '#2196F3'
   },
+ 
   buttonText: {
     padding: 7,
     fontSize: 18,

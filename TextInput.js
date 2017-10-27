@@ -9,11 +9,14 @@ const Touchable = (props) => (
     </TouchableOpacity>)
     
 class TextInput extends React.Component {
-    static navigationOptions = { title: "Learn about Props" }
+    static navigationOptions = { title: "Learn about Text Input" }
     render() {
       return (
         <View>
-          <Text>TextInput</Text>
+        <TextInput style={styles.searchInput}
+        value={this.state.searchString}
+        onChange={this._onSearchTextChanged}
+        placeholder='Search via id'/>
         </View>
       )
     }

@@ -9,14 +9,25 @@ const Touchable = (props) => (
       <Text style={styles.buttonText}>{props.title}</Text>
     </TouchableOpacity>)
     
-class State extends React.Component {
-    static navigationOptions = { title: "Learn about Props" }
+ class State extends React.Component {
+    static navigationOptions = { title: "Learn about states" }
+    constructor(props) {
+      super(props);
+      this.state = {showText: true};
+  
+      setInterval(() => {
+        this.setState(previousState => {
+          return { showText: !previousState.showText };
+        });
+      }, 1000);
+    }
     render() {
+      let display = this.state.showText ? this.props.text : ' '; 
       return (
         <View>
-          <Text>State</Text>
+          <Text>{display}</Text>
         </View>
       )
     }
   }
-  export default State;
+ 

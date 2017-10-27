@@ -8,14 +8,44 @@ const Touchable = (props) => (
       <Text style={styles.buttonText}>{props.title}</Text>
     </TouchableOpacity>)
     
-class ScrollView extends React.Component {
+export default class ScrollView extends React.Component {
     static navigationOptions = { title: "Learn about Props" }
     render() {
-      return (
-        <View>
-          <Text>ScrollView</Text>
-        </View>
-      )
-    }
-  }
-  export default ScrollView;
+      return(
+      <ScrollView>
+      <Text style={{fontSize:96}}>Scroll me plz</Text>
+      <Image source={require('./img/favicon.png')} />
+      <Image source={require('./img/favicon.png')} />
+      <Image source={require('./img/favicon.png')} />
+      <Image source={require('./img/favicon.png')} />
+      <Image source={require('./img/favicon.png')} />
+      <Text style={{fontSize:96}}>If you like</Text>
+      <Image source={require('./img/favicon.png')} />
+      <Image source={require('./img/favicon.png')} />
+      <Image source={require('./img/favicon.png')} />
+      <Image source={require('./img/favicon.png')} />
+      <Image source={require('./img/favicon.png')} />
+      <Text style={{fontSize:96}}>Scrolling down</Text>
+      <Image source={require('./img/favicon.png')} />
+      <Image source={require('./img/favicon.png')} />
+      <Image source={require('./img/favicon.png')} />
+      <Image source={require('./img/favicon.png')} />
+      <Image source={require('./img/favicon.png')} />
+      <Text style={{fontSize:96}}>What's the best</Text>
+      <Image source={require('./img/favicon.png')} />
+      <Image source={require('./img/favicon.png')} />
+      <Image source={require('./img/favicon.png')} />
+      <Image source={require('./img/favicon.png')} />
+      <Image source={require('./img/favicon.png')} />
+      <Text style={{fontSize:96}}>Framework around?</Text>
+      <Image source={require('./img/favicon.png')} />
+      <Image source={require('./img/favicon.png')} />
+      <Image source={require('./img/favicon.png')} />
+      <Image source={require('./img/favicon.png')} />
+      <Image source={require('./img/favicon.png')} />
+      <Text style={{fontSize:80}}>React Native</Text>
+    </ScrollView>
+ );
+}
+}
+  

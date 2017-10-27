@@ -9,13 +9,14 @@ const Touchable = (props) => (
     </TouchableOpacity>)
     
 class HeightWidth extends React.Component {
-    static navigationOptions = { title: "Learn about Props" }
+    static navigationOptions = { title: "Learn about Height and Width" }
     render() {
       return (
-        <View>
-          <Text>HeightWidth</Text>
-        </View>
-      )
+      <View>
+        <View style={{width: 50, height: 50, backgroundColor: 'powderblue'}} />
+        <View style={{width: 100, height: 100, backgroundColor: 'skyblue'}} />
+        <View style={{width: 150, height: 150, backgroundColor: 'steelblue'}} />
+      </View>
+      );
     }
   }
-  export default HeightWidth;
